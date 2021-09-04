@@ -1,0 +1,158 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   background-color: #fff;
+   color: #555;
+   font-family: "72", "Arial", sans-serif;
+   font-weight: 300;
+   font-size: 20px;
+   text-rendering: optimizeLegibility;
+   overflow-x: hidden;
+}
+
+header {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(resources/images/handymanHeader.jpg);
+   height: 40vh;
+   background-size: cover;
+   background-position: center;
+}
+
+section {
+   padding: 30px 0;
+   width: 70%;
+   margin: auto;
+}
+
+footer {
+   width: 100%;
+   background-color: #333;
+   color:rgba(255, 255, 255, 0.8);
+   padding: 50px;
+   font-size: 80%;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+ .header-div {
+   position: absolute;
+   width: 1140px;
+   top: 20%;
+   left: 50%;
+   color: rgba(255, 255, 255, 0.8);
+   transform: translate(-50%, -50%);
+}
+
+.header-flex {
+   margin-top: 30px;
+}
+
+.header-button {
+   color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------------------------------- */
+/* BOOKING */
+/* ----------------------------------------------- */
+
+.booking-text {
+   text-align: center;
+   padding-bottom: 30px;
+   text-decoration: underline; 
+}
+
+.booking-container {
+   position: relative;
+ }
+
+ .booking-block {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   border-radius: 25px;
+   background-color: #182505;
+   color: rgba(255, 255, 255, 0.6);
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+
+/* ----------------------------------------------- */
+/* HOWITWORKS */
+/* ----------------------------------------------- */
+
+.howitworks-text {
+   text-align: center;
+   padding-bottom: 30px;
+   text-decoration: underline; 
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+
+/* ----------------------------------------------- */
+/* MEDIA QUERIES */
+/* ----------------------------------------------- */
+
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+   .header-div {
+      width: 100%;
+      padding: 50px;
+   }
+
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+   .header-div {
+      width: 100%;
+   }
+
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+   
+   .section-howitworks {
+      width: 100%;
+   }
+
+}
+
+/* If the screen size is 480px wide or less, hide the element */
+@media only screen and (max-width: 480px) {
+
+   body {
+      font-size: 16px;
+   }
+
+   h1 {
+      font-size: 16px;
+   }
+
+   .header-div {
+      width: 100%;
+   }
+
+   .section-howitworks {
+      width: 100%;
+   }
+}
