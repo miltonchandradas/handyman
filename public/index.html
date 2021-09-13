@@ -12,19 +12,19 @@
     <link rel="apple-touch-icon" href="./images/app-icon-192x192.png" />
     <link rel="manifest" href="./manifest.json" />
     <title>Handyman - Home Improvement Services</title>
-    <script defer src="./js/localforage.js"></script>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("./serviceworker.js")
-          .then(reg => console.log(`Registered Service Worker: ${reg.scope}`)) 
-          .catch(err => console.log(`Failed to register Service Worker: ${err}`));
-        });
-      }
+      // if ("serviceWorker" in navigator) {
+      //   window.addEventListener("load", () => {
+      //     navigator.serviceWorker.register("./serviceworker.js")
+      //     .then(reg => console.log(`Registered Service Worker: ${reg.scope}`)) 
+      //     .catch(err => console.log(`Failed to register Service Worker: ${err}`));
+      //   });
+      // }
     </script>
   </body>
 </html>

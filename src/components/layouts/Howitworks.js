@@ -2,10 +2,6 @@ import React from "react";
 
 import { Timeline, TimelineItem } from "@ui5/webcomponents-react";
 
-import "@ui5/webcomponents-icons/dist/call.js";
-import "@ui5/webcomponents-icons/dist/calendar.js";
-import "@ui5/webcomponents-icons/dist/complete.js";
-
 const Howitworks = () => {
    return (
       <section>

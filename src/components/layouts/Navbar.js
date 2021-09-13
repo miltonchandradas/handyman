@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useHistory } from "react-router-dom";
 
 import {
    ShellBar,
@@ -8,28 +9,42 @@ import {
    ProductSwitch,
    ProductSwitchItem,
 } from "@ui5/webcomponents-react";
-import "@ui5/webcomponents-icons/dist/AllIcons";
+
 
 import logo from "../../resources/images/logo.png";
 
 const Navbar = (props) => {
    const popoverRef = useRef(null);
+   const history = useHistory();
 
    const productSwitchClickHandler = (e) => {
       console.log("Product Switch was clicked...");
       popoverRef.current.showAt(e.detail.targetRef);
    };
 
+   const logoClickHandler = (e) => {
+      console.log("Logo was clicked...");
+      history.push("/");
+   };
+
+   const profileClickHandler = (e) => {
+      console.log("Profile was clicked...");
+      history.push("/myaccount");
+   };
+
    const projectsClickHandler = (e) => {
       console.log("Projects Product Switch Item was clicked...");
+      history.push("/myprojects");
    };
 
    const reviewsClickHandler = (e) => {
       console.log("Reviews Product Switch Item was clicked...");
+      history.push("/myreviews");
    };
 
    const settingsClickHandler = (e) => {
       console.log("Settings Product Switch Item was clicked...");
+      history.push("/myaccount");
    };
 
    return (
@@ -37,6 +52,7 @@ const Navbar = (props) => {
          <ShellBar
             className=""
             logo={<img src={logo} alt="" />}
+            onLogoClick={logoClickHandler}
             menuItems={
                <>
                   <StandardListItem data-key="1">Menu Item 1</StandardListItem>
@@ -54,6 +70,7 @@ const Navbar = (props) => {
                   shape="Square"
                />
             }
+            onProfileClick={profileClickHandler}
             secondaryTitle="For all your Home Improvement needs !!"
             showNotifications
             showProductSwitch
