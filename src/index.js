@@ -1,7 +1,7 @@
 import React from "react";
 import reactDom from "react-dom";
 import { ThemeProvider } from "@ui5/webcomponents-react";
-import serviceworkerDEV from "./serviceworkerDEV";
+// import serviceworkerDEV from "./serviceworkerDEV";
 
 import App from "./App";
 
@@ -12,4 +12,4 @@ reactDom.render(
    document.getElementById("root")
 );
 
-serviceworkerDEV();
+// serviceworkerDEV();
