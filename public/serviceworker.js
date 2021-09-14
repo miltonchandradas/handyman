@@ -2,7 +2,8 @@ const CACHE_NAME = "v1";
 const STATIC_CACHED_ASSETS = [
    "/images/favicon.ico",
    "/index.html",
-   "App.css",
+   "/static/css/App.css",
+   "/static/css/main.46959cff.chunk.css",
    "/static/js/main.chunk.js",
    "/static/js/vendors~main.chunk.js",
    "/static/js/bundle.js",
